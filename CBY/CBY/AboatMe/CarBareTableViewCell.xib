@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="77" id="KGk-i7-Jjw" customClass="CarBareTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="386" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ex-fo-f2m">
+                        <rect key="frame" x="105" y="15" width="147" height="40"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfo-yA-0EA">
+                        <rect key="frame" x="329" y="7" width="35" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="yK4-15-vMu"/>
+                        </constraints>
+                        <state key="normal" image="deleteCar">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pys-c0-YBo">
+                        <rect key="frame" x="21" y="8" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="36" id="fDt-6B-QcF"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6ex-fo-f2m" firstAttribute="leading" secondItem="Pys-c0-YBo" secondAttribute="trailing" constant="20" id="0Gh-qQ-1PT"/>
+                    <constraint firstItem="tfo-yA-0EA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="3Cv-Gg-uCO"/>
+                    <constraint firstItem="Pys-c0-YBo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="15" id="Jwq-X2-Uso"/>
+                    <constraint firstItem="tfo-yA-0EA" firstAttribute="leading" secondItem="6ex-fo-f2m" secondAttribute="trailing" constant="20" id="L6O-vO-ajw"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="6ex-fo-f2m" secondAttribute="bottom" constant="5" id="Meh-d4-DKA"/>
+                    <constraint firstItem="6ex-fo-f2m" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="NK8-LZ-dfb"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="tfo-yA-0EA" secondAttribute="bottom" constant="18" id="dGf-RJ-VAr"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Pys-c0-YBo" secondAttribute="bottom" constant="15" id="j6N-6E-9mP"/>
+                    <constraint firstItem="Pys-c0-YBo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="tKp-81-WV5"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="tfo-yA-0EA" secondAttribute="trailing" constant="10" id="uui-TG-Xaf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="carDetailLabel" destination="6ex-fo-f2m" id="fyW-KO-CNl"/>
+                <outlet property="carImageView" destination="Pys-c0-YBo" id="otC-NO-sCe"/>
+                <outlet property="deleteBtn" destination="tfo-yA-0EA" id="hlZ-zF-fuQ"/>
+            </connections>
+            <point key="canvasLocation" x="284" y="392.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="deleteCar" width="51" height="43"/>
+    </resources>
+</document>
